@@ -1,0 +1,45 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Link, Routes, Outlet } from 'react-router-dom';
+import Home from './components/Home';
+import Catalog from './components/Catalog';
+import Reviews from './components/Reviews';
+import style from './App.module.css'
+import Contact from './components/Contact';
+import PizzaDetails from './components/PizzaDetails'
+function App() {
+  return (
+    <Router>
+      <div className={style.main}>
+        <nav className={style.nav}>
+          <ul className={style.ul}>
+            <li className={style.li}>
+              <Link to="/">Главная</Link>
+            </li>
+            <li>
+              <Link to="/catalog/">Каталог</Link>
+            </li>
+            <li>
+              <Link to="/reviews">Отзывы</Link>
+            </li>
+            <li>
+              <Link to="/contact">Контакты</Link>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/catalog/:pizzaId" element={<PizzaDetails />} />
+        </Routes>
+        
+        <footer className={style.footer}>c 2023 Pizza Place.Все права защищены</footer>
+      </div>
+    </Router>
+    
+
+
+  );
+
+} export default App;

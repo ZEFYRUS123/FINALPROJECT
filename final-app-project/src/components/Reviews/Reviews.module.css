@@ -1,0 +1,52 @@
+.menu_description{
+    height: 250px;
+    border: 2px solid rgb(175, 171, 171);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    display: flex; 
+    text-align: center; 
+}
+
+.catimg{
+    height: 250px;
+    width: 100px;
+}
+
+.list{
+    padding: 10px;
+    margin-bottom: 20px;   
+}
+
+
+.h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #8e9b55;
+    margin-bottom: px;
+}
+
+.h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #8e9b55;
+    margin-bottom: px;
+}
+
+.catimg {
+    width: 270px;
+    border-radius: 10px;
+}
+
+.list_reviews{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+}
+
+.review{
+    margin-left: 225px;
+}
+
+.p1{
+    font-size: large;
+    
+}
